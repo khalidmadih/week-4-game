@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystals Collector Game</title>
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Jumbotron for Title -->
+    <div class="jumbotron">
+        <h1 class="text-center">Crystals Collector</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- Istructions Panel -->
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Game Rules</h3>
+                    </div>
+                    <div class="panel-body">
+                        <h1></h1>
+                        <p>You will be given a random number at the start of the game. There are four crystals and each represent a value. By clicking on a crystal you will add a specific amount of points to your total score. You win the game by matching your total score to a random number, and you lose the game if your total score goes above the random number. The value of each crystal is hidden from you until you click on it.<h3 class="text-right">Good luck!!</h3></p>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Results Panel -->
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Results</h3>
+                        <div class="row">
+                            <div class="col-md-3 randomNumberDiv">
+                                <h2 id="randomNumber">XX</h2>
+                            </div>
+                            <div class="col-md-3 col-md-offset-1 winsLossesDiv">
+                                <p id="winsTally">Wins: </p>
+                                <p id="lossesTally">losses: </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <h1 class="text-center"></h1>
+                        <!-- gems -->
+                        <div class="row">
+                            <div class="col-md-3 gem" value="gem1">
+                                <img src="assets/images/gem1.png" class="img-responsive" alt="Gem1">
+                            </div>
+                            <div class="col-md-3 gem" value="gem2">
+                                <img src="assets/images/gem2.png" class="img-responsive" alt="Gem2">
+                            </div>
+                            <div class="col-md-3 gem" value="gem3">
+                                <img src="assets/images/gem3.png" class="img-responsive" alt="Gem3">
+                            </div>
+                            <div class="col-md-3 gem" value="gem4">
+                                <img src="assets/images/gem4.png" class="img-responsive" alt="Gem4">
+                            </div>
+                        </div>
+
+                        <!-- score text row -->
+                        <div class="row">
+                            <hr>
+                            <div class="col-md-6 scoreDiv">
+                                <h2>Your total score is:</h2>
+                            </div>
+                            <div class="col-md-6 scoreDiv">
+                                <h2 id="userScore">XX</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+
+</html>
