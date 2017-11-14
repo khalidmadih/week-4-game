@@ -19,27 +19,27 @@
         <div class="row">
             <!-- Istructions Panel -->
             <div class="col-lg-6">
-                <div class="panel panel-default">
+                <div class="panel panel-info">
                     <div class="panel-heading">
                         <h3 class="panel-title">Game Rules</h3>
                     </div>
                     <div class="panel-body">
-                        <h1></h1>
-                        <p>You will be given a random number at the start of the game. There are four crystals and each represent a value. By clicking on a crystal you will add a specific amount of points to your total score. You win the game by matching your total score to a random number, and you lose the game if your total score goes above the random number. The value of each crystal is hidden from you until you click on it.<h3 class="text-right">Good luck!!</h3></p>
+                        <p>You will be given a random number at the start of the game. There are four crystals and each represent a value. By clicking on a crystal you will add a specific amount of points to your total score. You win the game by matching your total score to a random number, and you lose the game if your total score goes above the random number. The value of each crystal is hidden from you until you click on it.<h3 class="text-right text-info">Good luck!!</h3></p>
 
                     </div>
                 </div>
             </div>
             <!-- Results Panel -->
             <div class="col-lg-6">
-                <div class="panel panel-default">
+                <div class="panel panel-warning">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Results</h3>
+                        
                         <div class="row">
-                            <div class="col-md-3 randomNumberDiv">
+                            <div class="col-md-4 randomNumberDiv">
+                                <h1 class="panel-title">Our number:</h1>
                                 <h2 id="randomNumber">XX</h2>
                             </div>
-                            <div class="col-md-3 col-md-offset-1 winsLossesDiv">
+                            <div class="col-md-6 col-md-offset-1 winsLossesDiv">
                                 <p id="winsTally">Wins: </p>
                                 <p id="lossesTally">losses: </p>
                             </div>
@@ -50,16 +50,16 @@
                         <!-- gems -->
                         <div class="row">
                             <div class="col-md-3 gem" value="gem1">
-                                <img src="assets/images/gem1.png" class="img-responsive" alt="Gem1">
+                                <img src="assets/images/gem1.gif" class="img-responsive" alt="Gem1">
                             </div>
                             <div class="col-md-3 gem" value="gem2">
-                                <img src="assets/images/gem2.png" class="img-responsive" alt="Gem2">
+                                <img src="assets/images/gem2.gif" class="img-responsive" alt="Gem2">
                             </div>
                             <div class="col-md-3 gem" value="gem3">
-                                <img src="assets/images/gem3.png" class="img-responsive" alt="Gem3">
+                                <img src="assets/images/gem3.gif" class="img-responsive" alt="Gem3">
                             </div>
                             <div class="col-md-3 gem" value="gem4">
-                                <img src="assets/images/gem4.png" class="img-responsive" alt="Gem4">
+                                <img src="assets/images/gem4.gif" class="img-responsive" alt="Gem4">
                             </div>
                         </div>
 
@@ -78,6 +78,7 @@
             </div>
         </div>
     </div>
+    <script src="assets/javascript/game.js"></script>
     </body>
 
 </html>
